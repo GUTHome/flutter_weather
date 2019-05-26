@@ -44,6 +44,26 @@ flutter:
   # assets:
   #  - images/a_dot_burr.jpeg
   #  - images/a_dot_ham.jpeg
+  
+
+  #  ******************* 新增图片格式如下  ********************
+  #  主资源默认对应于1.0倍的分辨率图片。看一个例子：
+  #…/my_icon.png
+  #…/2.0x/my_icon.png
+  #…/3.0x/my_icon.png
+  #在设备像素比率为1.8的设备上，.../2.0x/my_icon.png 将被选择。对于2.7的设备像素比率，.../3.0x/my_icon.png将被选择。
+
+  assets:
+    - sources/tabbar_find_normal.png
+    - sources/tabbar_find_select.png
+
+  # 快捷键
+
+  # 代码整齐   Shift + Option + F
+
+
+
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
