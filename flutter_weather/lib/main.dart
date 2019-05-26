@@ -108,3 +108,7 @@ class _MyAppStatePage extends State<MyApp> {
     );
   }
 }
+
+/// git标签规范：flutter_xxx(学习)
+/// UI基础部分例如 第一个是tabBar搭建：flutter_base_tabBar
+/// 网络基础部分例如 flutter_net_xxx
