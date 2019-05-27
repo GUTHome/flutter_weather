@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
+
+///cupertino风格组件
+// import 'package:flutter/cupertino.dart';
 
 // 两个控制器
 import 'package:flutter_weather/classes/city_about/controller_dart/city_list_controller.dart';
@@ -80,13 +82,13 @@ class _MyAppStatePage extends State<MyApp> {
 
     initData();
 
-    return CupertinoApp(
-      theme: new CupertinoThemeData(
+    return MaterialApp(
+      theme: new ThemeData(
         primaryColor: Colors.blue,
       ),
       home: new Scaffold(
         body: _body,
-        bottomNavigationBar: new CupertinoTabBar(
+        bottomNavigationBar: new BottomNavigationBar(
           items: <BottomNavigationBarItem>[
             new BottomNavigationBarItem(
               icon: getCurrentIcon(0),
@@ -108,3 +110,7 @@ class _MyAppStatePage extends State<MyApp> {
     );
   }
 }
+
+/// git标签规范：flutter_xxx(学习)
+/// UI基础部分例如 第一个是tabBar搭建：flutter_base_tabBar
+/// 网络基础部分例如 flutter_net_xxx
